@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,7 @@ namespace ConsoleApp1
             int attempts = 10;
 
             Console.WriteLine("Угадайте число от 0 до 100. У вас 10 попыток.");
+			            {
 			while (attempts > 0)
             {
                 Console.Write("Попытка №" + (11 - attempts) + ": ");
@@ -29,6 +30,15 @@ namespace ConsoleApp1
                 {
                     Console.WriteLine("Загаданное число больше.");
                 }
+				else
+                {
+                    Console.WriteLine("Загаданное число меньше.");
+                }
+
+                attempts--;
+            }
+
+            Console.WriteLine("Вы не угадали число. Загаданное число: " + number);
         }
     }
 }
