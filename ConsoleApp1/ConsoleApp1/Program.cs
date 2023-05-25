@@ -10,6 +10,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+			Random random = new Random();
+            int number = random.Next(0, 101);
+            int attempts = 10;
+
+            Console.WriteLine("Угадайте число от 0 до 100. У вас 10 попыток.");
         }
     }
 }
