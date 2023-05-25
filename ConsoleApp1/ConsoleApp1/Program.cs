@@ -16,6 +16,8 @@ namespace ConsoleApp1
 
             Console.WriteLine("Угадайте число от 0 до 100. У вас 10 попыток.");
 			            {
+			while (attempts > 0)
+            {
                 Console.Write("Попытка №" + (11 - attempts) + ": ");
                 int guess = Convert.ToInt32(Console.ReadLine());
 
